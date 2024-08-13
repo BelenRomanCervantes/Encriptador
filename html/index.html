@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../assets/Logo.png" alt="Logo de Alura" href="https://www.aluracursos.com/">
+    </header>
+    <main>
+        <section class="encabezado">
+            <h1 class="encabezado__titulo">¡Bienvenido(a) a mi encriptador de texto!</h1>
+            <h2 class="encabezado__subtitulo">Con esta herramienta podrás intercambiar mensajes secretos
+                con otras personas que conozcan la encriptación utilizada.</h2>
+        </section>
+        <section class="encriptador">
+            <section class="cifrado">
+                <textarea cols="30" rows="10" class="textarea__cifrado" id="input-text"
+                    placeholder="Ingrese el texto aquí..."></textarea>
+                <div>
+                    <h6 class="informacion"><img src="../assets/alert-icon.png" alt="Icono de alerta"> Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="presentacion">
+                    <textarea class="presentacion__texto" cols="20" rows="10" id="output-text" readonly><img src="../assets/Muñeco.png" alt="persona buscando" class="presentacion__imagen"></textarea>
+                    <h3 class="presentacion__titulo">Ningún mensaje fue encontrado</h3>
+                    <p class="presentacion__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <div>
+                        <button class="btn-copiar" id="copy-button" onClick="copiar()">Copiar</button>
+                    </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Belén Román Cervantes</p>
+        <div class="footer__enlaces">
+            <a class="footer__enlaces__link" href="https://www.instagram.com/belenitzelroman/">
+                <img src="../assets/instagram.png" alt="Icono de Instagram"></a>
+            <a class="footer__enlaces__link" href="https://github.com/BelenRomanCervantes">
+                <img src="../assets/github.png" alt="Icono de GitHub"></a>
+            <a class="footer__enlaces__link"
+                href="https://www.linkedin.com/in/belen-roman-cervantes/">
+                <img src="../assets/linkedin.png" alt="Icono de Linkedin"></a><br>
+        </div>
+    </footer>
+    <script src="../encriptador.js"></script>
+</body>
+
+</html>
