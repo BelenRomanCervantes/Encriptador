@@ -29,19 +29,15 @@
                     <h6 class="informacion"><img src="../assets/alert-icon.png" alt="Icono de alerta"> Solo letras minúsculas y sin acentos</h6>
                 </div>
                 <div class="botones">
-                    <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
-                    <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    <button class="btn-encriptar" id="encrypt-button">Encriptar</button>
+                    <button class="btn-desencriptar" id="decrypt-button">Desencriptar</button>
                 </div>
             </section>
-            <section class="presentacion">
-                <aside class="presentacion__texto" cols="20" rows="10" id="output-text" readonly>
-                    <img src="../assets/Muñeco.png" alt="imagen de persona buscando" class="presentacion__imagen">
-                    <h3 class="presentacion__titulo">Ningún mensaje fue encontrado</h3>
-                    <p class="presentacion__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <div>
-                        <button class="btn-copiar" id="copy-button" onClick="copiar()">Copiar</button>
-                    </div>
-                </aside>
+            <section class="presentacion" id="presentacion">
+                    <img class="presentacion__imagen" id="image" src="../assets/Muñeco.png" alt="imagen de persona buscando">
+                    <textarea class="presentacion__titulo" id="output-text" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <p class="presentacion__parrafo" id="info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button class="btn-copiar" id="copy-button" onClick="copiar()">Copiar</button>
             </section>
         </section>
     </main>
